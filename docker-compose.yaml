@@ -1,0 +1,7 @@
+version: "3.9" 
+services:
+  data:
+    build: .
+    command: python workflow.py -i resources/impressions.json -c resources/clicks.json
+    volumes:
+      - .:/code
